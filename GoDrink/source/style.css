@@ -1,0 +1,277 @@
+/* Parte do header */
+
+header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 15px 40px;
+
+    background-color: #173d32;
+
+}
+
+/* Parte dos botões do site */
+
+header button,
+.hero button {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    z-index: 0;
+
+    background-color: white;
+
+    color: #173d32;
+
+    border: none;
+
+    padding: 12px 24px;
+
+    border-radius: 30px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 8px 8px 20px rgba(36, 114, 60, 0.712);
+
+    transition: 0.3s;
+
+}
+
+header button::after,
+.hero button::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 40px;
+
+    height: 70px;
+
+    background-color: #47f581;
+
+    border-radius: 50%;
+
+    right: -25px;
+
+    top: -20px;
+
+    filter: blur(15px);
+
+    opacity: 0.8;
+
+    transition: 0.3s;
+
+    z-index: -1;
+
+}
+
+header button:hover,
+.hero button:hover {
+
+    background-color: #47f581;
+
+    transform: translateY(-3px);
+
+}
+
+header button:hover::after,
+.hero button:hover::after {
+
+    opacity: 0;
+
+}
+
+/* Parte da logo */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+.logo img {
+
+    width: 150px;
+
+    height: auto;
+
+}
+
+/* Parte do menu nav */
+
+nav {
+
+    display: flex;
+
+    gap: 30px;
+
+}
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-family: Arial, sans-serif;
+
+    position: relative;
+
+}
+
+nav a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -6px;
+
+    width: 0;
+
+    height: 2px;
+
+    background-color: rgba(255, 255, 255, 0.7);
+
+    transition: width 0.5s ease;
+
+}
+
+nav a:hover::after {
+
+    width: 100%;
+
+}
+
+nav a.ativo::after {
+
+    width: 100%;
+
+}
+
+/* Parte do menu hero */
+
+.hero {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 60px 80px;
+
+}
+
+.hero-image {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.hero-image img {
+
+    width: 600px;
+
+    height: auto;
+
+}
+
+.hero-text > img {
+
+    width: 450px;
+
+    height: auto;
+
+}
+
+.hero-text p {
+
+    font-size: 20px;
+
+    color: #173d32;
+
+    font-family: Arial, sans-serif;
+
+    margin-top: 20px;
+
+}
+
+/* Parte do html e do body */
+
+html, body {
+
+    min-height: 100%;
+
+}
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+}
+
+/* Parte do main */
+
+main {
+
+    min-height: calc(100vh - 90px);
+
+}
+
+/* Parte do rodapé */
+
+#rodape {
+
+    background-color: #173d32;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
+
+}
+
+#rodape h3 {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    font-family: Arial, sans-serif;
+
+    font-weight: normal;
+
+}
